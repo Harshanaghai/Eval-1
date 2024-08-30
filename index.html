@@ -15,21 +15,31 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <img class="logo" src="flickhub-high-resolution-logo (2).png" alt="">
-        <div class="one">
-            <a href="#">Home</a>
-            <a href="#">Genres</a>
-            <a href="#">New Releases</a>
-            <a href="#">My List</a>
-            <a href="#">Popular</a>
-        </div>
-        <form class="search-container">
-            <input type="text" placeholder="Search...">
-            <i class="fas fa-search"></i>
-        </form>
-       <button class="signin">Sign In</button>
-    </div>
+    <nav class="navbar sticky-bg-dark border-bottom border-body" data-bs-theme="dark">
+       
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="flickhub-high-resolution-logo (2).png" alt=""> </a>
+               <a href="#">Home</a>
+            <a class="nav-link active" href="#">Genres</a>
+            <a class="nav-link" href="#">New Releases</a>
+            <a class="nav-link" href="#">My List</a>
+            <a class="nav-link" href="#">Popular</a>
+            <a href="#" class="nav-link user">
+                <i class="fas fa-user" ></i>
+                
+            </a>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+       
+    </nav>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
