@@ -1,28 +1,227 @@
-*{
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  font-family: c;
-}
 
-
-.logo{
-    height: 100px;
-    margin-left: 50px;  
-}
-.container-fluid a {
+body {
+  background-color: #000000; /* Black background */
   color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.logo {
+  height: 55px;
+  margin-left: 20px;
+}
+
+nav{
+  background-color: #000000;
+}
+
+.container-fluid a {
+  color:white;
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
-  margin-left: 1vw;
 }
 
 .navbar .nav-link.user {
-  margin-left: auto; 
-  margin-right: 10px; 
+  margin-left: auto;
+  margin-right: 10px;
 }
-.container-fluid a:hover{
-  color: #ccff00;
+
+.container-fluid a:hover {
+  /* color: white; */
+  text-decoration-line: underline;
+  text-decoration-color: #ccff00;
+  text-decoration-thickness: 3px;
 }
-.d-flex{
+
+
+.d-flex {
   margin-right: 20px;
 }
+
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+
+
+.themeToggle {
+  background-color: white;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 0 05px rgba(0, 255, 0, 0.5),
+              0 0 10px rgba(0, 255, 0, 0.5),
+              0 0 10px rgba(0, 255, 0, 0.5),
+              0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+
+.circle {
+  background-color: #ccff00;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: absolute;
+  left: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movies {
+margin-top: 6px;
+background-color: #000;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center ;
+}
+
+
+.carousel-caption h5 {
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ccff00;
+}
+
+.carousel-caption p {
+
+  font-size: 1.2rem;
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.featured-movies h2 {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.8rem; 
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  max-width: 200px; 
+  
+}
+
+.card img {
+  height: 200px; 
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem; 
+  color: #ccff00;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.875rem; 
+  color: white;
+}
+
+.card-footer {
+  background-color: #000;
+  color: #ccff00;
+  font-size: 0.75rem; 
+}
+
+
+.row-cols-md-4 .col {
+  margin-bottom: 1rem;
+}
+/* Light Theme Styles */
+.light-theme body {
+  background-color: #ffffff;
+  color: black;
+}
+.light-theme .movies{
+  background-color: white;
+}
+
+.light-theme nav {
+  background-color: #f8f9fa; /* Light gray for navbar */
+}
+
+.light-theme .container-fluid a {
+  color: black;
+}
+
+.light-theme .container-fluid a:hover {
+  text-decoration-color: #007bff; /* Blue underline on hover */
+}
+
+.light-theme .dropdown-menu li a {
+  /* color: white;/ Change dropdown text to white in light mode */
+}
+
+.light-theme .themeToggle {
+  background-color: #ccc; /* Gray background for toggle switch */
+}
+
+.light-theme .circle {
+  background-color: #007bff; /* Blue circle for toggle */
+}
+
+.light-theme .card {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.light-theme .card-title {
+  color: #007bff;
+}
+
+.light-theme .card-footer {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+.light-theme .carousel-caption h5 {
+  color: #007bff; /* Change carousel caption color */
+}
+
+.light-theme .carousel-caption p {
+  color: black;
+}
+
+.light-theme .carousel-control-prev-icon,
+.light-theme .carousel-control-next-icon {
+  background-color: white;
+  border-radius: 50%;
+}
+  /* scroll btn */
+  .scrollTopBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #ccff00;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  .scrollTopBtn:hover {
+    background-color: #ffcc00;
+  }
+  
